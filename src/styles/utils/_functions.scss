@@ -1,0 +1,14 @@
+//== Rem Converter
+//
+//## Converts px to rem.
+@function rem($size) {
+  @if (type-of($size) != 'number' ) {
+    @return $size;
+  }
+
+  @if (unit($size) == 'px') {
+    @return $size/16px * 1rem;
+  }
+
+  @return $size;
+}

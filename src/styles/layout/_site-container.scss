@@ -1,0 +1,17 @@
+.site-container {
+  display: flex;
+  flex-direction: column;
+
+  @include media-breakpoint-up($navbar-expand-breakpoint) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+}
+
+.content-container {
+  @include media-breakpoint-up($navbar-expand-breakpoint) {
+    margin-left: 25%;
+    background-color: $white-smoke;
+  }
+}

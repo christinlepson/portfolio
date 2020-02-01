@@ -1,0 +1,139 @@
+.navbar {
+  text-transform: uppercase;
+  background: linear-gradient(rgba(216, 70, 39, .8), rgba(193, 41, 46, 0.8));
+  @include media-breakpoint-up($navbar-expand-breakpoint) {
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+      z-index: -1;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: auto;
+      content: " ";
+      display: block;
+      width: 25%;
+      background: url('../assets/profile-background.jpg') top center no-repeat #bababa;
+      background-size: cover;
+    }
+
+  }
+}
+
+.nav__content {
+  width: 100%;
+  height: 100%;
+  padding: rem(40px) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-breakpoint-up($navbar-expand-breakpoint) {
+    padding: rem(45px) 0;
+  }
+}
+
+.nav__header {
+  color: $white-smoke;
+  text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    display: block;
+    text-align: center;
+    margin: 0 -40px;
+  }
+
+  h1 {
+    font-size: rem(22px);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+}
+
+#main-nav {
+  padding: 0;
+  width: 100%;
+  margin: 45px -40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+    display: block;
+    width: 100%;
+    padding: 5px rem(40px);
+    position: relative;
+
+    &.active:after {
+      content: " ";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-bottom: 9px solid transparent;
+      border-right: 8px solid #fff;
+      bottom: 6px;
+      left: auto;
+      right: 0;
+    }
+
+  }
+
+}
+
+.navbar-expand-lg .navbar-nav {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-item {
+  font-size: rem(14px);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  text-shadow: 1px 0px 20px rgba(0, 0, 0, 0.2);
+
+  &.active {
+    position: relative;
+    color: $white-smoke;
+  }
+
+  &:hover {
+    color: $white-smoke;
+    text-decoration: none;
+  }
+
+  &.active:before {
+    content: '';
+    display: inline-block;
+    background-color: $white-smoke;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: -12px;
+    top: 40%;
+  }
+
+}
+
