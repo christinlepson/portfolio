@@ -31,9 +31,18 @@
   border: none;
   color: rgba(255, 255, 255, 0.6);
 }
+.navbar-light .navbar-toggler {
+  &:focus {
+    outline: none;
+  }
+}
+
 
 .navbar-light .navbar-toggler-icon {
   background-image: escape-svg($navbar-dark-toggler-icon-bg);
+  &:focus {
+    outline: none;
+  }
 }
 
 .nav__content {

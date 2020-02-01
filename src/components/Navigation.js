@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
 import {withRouter} from 'react-router-dom';
@@ -6,8 +6,14 @@ import {SocialMediaList} from '.';
 
 const Navigation = (props) => {
 
+  const toggler = useRef(null);
+
   const getNavLinkClass = (path) => {
     return props.location.pathname === path ? 'active' : '';
+  };
+
+  const clickToggler = () => {
+    toggler.current.click();
   };
 
   return (
@@ -25,19 +31,19 @@ const Navigation = (props) => {
 
         <div className={'nav__expander'}>
           <SocialMediaList/>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+          <Navbar.Toggle ref={toggler} aria-controls="basic-navbar-nav"/>
         </div>
         <Navbar.Collapse id="main-nav">
           <Nav className="nav-main">
             <ul>
               <li className={getNavLinkClass('/')}>
-                <NavLink className={'nav-item'} exact to="/">Home</NavLink>
+                <NavLink onClick={clickToggler} className={'nav-item'} exact to="/">Home</NavLink>
               </li>
               <li className={getNavLinkClass('/fuel-savings')}>
-                <NavLink className={'nav-item'} to="/fuel-savings">Demo App</NavLink>
+                <NavLink onClick={clickToggler} className={'nav-item'} to="/fuel-savings">Demo App</NavLink>
               </li>
               <li className={getNavLinkClass('/about')}>
-                <NavLink className={'nav-item'} to="/about">About</NavLink>
+                <NavLink onClick={clickToggler} className={'nav-item'} to="/about">About</NavLink>
               </li>
             </ul>
 
