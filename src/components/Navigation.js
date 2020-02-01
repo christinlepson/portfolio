@@ -2,6 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
 import {withRouter} from 'react-router-dom';
+import {SocialMediaList} from '.';
 
 const Navigation = (props) => {
 
@@ -22,7 +23,10 @@ const Navigation = (props) => {
           </div>
         </div>
 
-        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <div className={'nav__expander'}>
+          <SocialMediaList/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        </div>
         <Navbar.Collapse id="main-nav">
           <Nav className="nav-main">
             <ul>
