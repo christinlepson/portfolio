@@ -37,13 +37,13 @@ const Navigation = (props) => {
           <Nav className="nav-main">
             <ul>
               <li className={getNavLinkClass('/')}>
-                <NavLink onClick={clickToggler} className={'nav-item'} exact to="/">Home</NavLink>
+                <NavLink onClick={clickToggler} className={'nav-item'} exact to="/">Projects</NavLink>
               </li>
               <li className={getNavLinkClass('/fuel-savings')}>
-                <NavLink onClick={clickToggler} className={'nav-item'} to="/fuel-savings">Demo App</NavLink>
+                <NavLink onClick={clickToggler} className={'nav-item'} to="/fuel-savings">Résumé</NavLink>
               </li>
               <li className={getNavLinkClass('/about')}>
-                <NavLink onClick={clickToggler} className={'nav-item'} to="/about">About</NavLink>
+                <NavLink onClick={clickToggler} className={'nav-item'} to="/about">Contact Me</NavLink>
               </li>
             </ul>
 
