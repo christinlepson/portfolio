@@ -1,4 +1,35 @@
 .project {
 
+  &__container {
+    padding: 65px 10px;
+  }
 
+  &__technologies {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  h3 {
+    color: $blue;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-color: $gray-900;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  h5 {
+    color: $blue;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+}
+
+.project-gray {
+  background-color: $white-smoke;
+  clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
 }

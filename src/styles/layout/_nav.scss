@@ -1,4 +1,5 @@
 .navbar {
+  font-family: 'Nanum Gothic', sans-serif;
   padding: 0;
   text-transform: uppercase;
   @include media-breakpoint-up($navbar-expand-breakpoint) {
