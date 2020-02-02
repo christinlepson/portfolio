@@ -3,13 +3,13 @@ import React from 'react';
 function SocialMediaList() {
   return (
     <div className={'social-media-list'}>
-      <a href={'mailto:christin@protonmail.com'} alt={'email: christin@protonmail.com'}>
+      <a target={'blank'} href={'mailto:christin@protonmail.com'} alt={'email: christin@protonmail.com'}>
         <i style={styles.icon} className="fa fa-envelope"/>
       </a>
-      <a href={'https://www.linkedin.com/in/christinlepson/'} alt={'linkedin: Christin Lepson'}>
+      <a target={'blank'} href={'https://www.linkedin.com/in/christinlepson/'} alt={'linkedin: Christin Lepson'}>
         <i style={styles.icon} className="fab fa-linkedin"/>
       </a>
-      <a href={'https://github.com/christinlepson'} alt={'github: Christin Lepson'}>
+      <a target={'blank'} href={'https://github.com/christinlepson'} alt={'github: Christin Lepson'}>
         <i style={styles.icon} className="fab fa-github"/>
       </a>
     </div>

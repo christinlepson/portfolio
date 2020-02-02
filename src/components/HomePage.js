@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div>
       <ProjectBlock
-        skills={['reactNative', 'node', 'firebase']}
+        skills={['reactNative', 'node', 'firebase', 'git']}
         image={'../assets/project-mbrt.png'}
         imageAlt={'Darkweb ID'}
         title={'Way to Be! Mobile App'}
@@ -19,7 +19,7 @@ const HomePage = () => {
         <ProjectBlock
           alternate
           link={'https://www.idagent.com/dark-web/'}
-          skills={['drupal', 'laravel', 'php', 'sass', 'jquery', 'aws', 'node']}
+          skills={['drupal', 'laravel', 'php', 'sass', 'jquery', 'aws', 'node', 'git']}
           image={'../assets/project-darkweb.png'}
           imageAlt={'Darkweb ID'}
           title={'Darkweb ID'}
@@ -32,7 +32,7 @@ const HomePage = () => {
 
       <ProjectBlock
         link={'https://www.prometric.com/'}
-        skills={['drupal', 'php', 'sass', 'jquery']}
+        skills={['drupal', 'php', 'sass', 'jquery', 'git']}
         image={'../assets/project-prometric.png'}
         imageAlt={'Prometric'}
         title={'Prometric'}
