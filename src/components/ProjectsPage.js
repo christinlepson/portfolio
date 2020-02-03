@@ -1,12 +1,15 @@
 import React from 'react';
 import {ProjectBlock} from '.';
+import mbrtImage from '../assets/project-mbrt.png';
+import darkwebImage from '../assets/project-darkweb.png';
+import prometricImage from '../assets/project-prometric.png';
 
 const ProjectsPage = () => {
   return (
     <div className={'projects'}>
       <ProjectBlock
         skills={['reactNative', 'node', 'firebase', 'drupal', 'git']}
-        image={'../assets/project-mbrt.png'}
+        image={mbrtImage}
         imageAlt={'Darkweb ID'}
         title={'Way to Be! Mobile App'}
         mainDescription={'Way To Be! is a mobile app created for the Maryland Business Roundtable for Education. This fun app helps children in Maryland public schools '
@@ -20,7 +23,7 @@ const ProjectsPage = () => {
           alternate
           link={'https://www.idagent.com/dark-web/'}
           skills={['drupal', 'laravel', 'php', 'sass', 'jquery', 'aws', 'node', 'git']}
-          image={'../assets/project-darkweb.png'}
+          image={darkwebImage}
           imageAlt={'Dark Web ID'}
           title={'ID Agent: Dark Web ID'}
           mainDescription={'ID Agent\'s Dark Web ID is a dark web monitoring platform that allows organizations to monitor compromised or stolen employee and customer data. '
@@ -33,7 +36,7 @@ const ProjectsPage = () => {
       <ProjectBlock
         link={'https://www.prometric.com/'}
         skills={['drupal', 'php', 'sass', 'jquery', 'git']}
-        image={'../assets/project-prometric.png'}
+        image={prometricImage}
         imageAlt={'Prometric'}
         title={'Prometric'}
         mainDescription={'Prometric is a leading provider of technology-enabled testing and assessment solutions to many of the world’s most recognized '
