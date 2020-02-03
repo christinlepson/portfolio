@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import PropTypes from 'prop-types';
 import {NavLink, withRouter} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
-import {SocialMediaList} from '.';
+import SocialMediaList from './SocialMediaList';
 import profileImage from '../assets/profile.jpg';
 
 const Navigation = (props) => {
