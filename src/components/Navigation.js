@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {NavLink, withRouter} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
 import {SocialMediaList} from '.';
+import profileImage from '../assets/profile.jpg';
 
 const Navigation = (props) => {
 
@@ -22,7 +23,7 @@ const Navigation = (props) => {
       <div className='nav__content'>
 
         <div className={'nav__header'}>
-          <img src='../assets/profile.jpg' alt='Christin Lepson' style={styles.profileImage}/>
+          <img src={profileImage} alt='Christin Lepson' style={styles.profileImage}/>
           <div className={'nav__header__content'}>
             <h1>Christin Lepson</h1>
             <h2>Full-stack Web Developer</h2>
