@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import {ResumeBlock} from '.';
+import resumeFile from '../public/christin-lepson-resume.pdf';
 
 function ResumePage() {
   return (
@@ -9,7 +10,7 @@ function ResumePage() {
         <Row className={'resume__download'}>
           <Col>
             <div className={'resume__download-container'}>
-              <a download={'christin-lepson-resume.pdf'} target={'_blank'} className={'resume__download-button'} href={'../public/christin-lepson-resume.pdf'}>
+              <a download={resumeFile} target={'_blank'} className={'resume__download-button'} href={resumeFile}>
                 View as PDF
                 <i className="fas fa-file-download"></i>
               </a>
