@@ -5,30 +5,30 @@ const ProjectsPage = () => {
   return (
     <div className={'projects'}>
       <ProjectBlock
-        skills={['reactNative', 'node', 'firebase', 'git']}
+        skills={['reactNative', 'node', 'firebase', 'drupal', 'git']}
         image={'../assets/project-mbrt.png'}
         imageAlt={'Darkweb ID'}
         title={'Way to Be! Mobile App'}
-        mainDescription={'\n' +
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at velit erat. Aenean eu accumsan justo. Morbi varius est at diam auctor, sed sagittis ex gravida. Nulla at nibh rhoncus, lobortis lectus non, pretium sem. Curabitur nec magna semper, scelerisque nisi et, malesuada nulla. Nullam ac quam lectus. Morbi sit amet lectus lectus. Vestibulum congue consequat nisl, in consectetur felis venenatis eget. Nunc non magna velit. Ut vitae erat molestie, gravida ex sit amet, tincidunt orci. Fusce lacinia ac felis ac maximus. Donec gravida quis augue eu sagittis.\n' +
-        '\n' +
-        'Vestibulum molestie mauris ultrices dui lobortis tincidunt. Nam dignissim augue a libero tempor bibendum. Pellentesque venenatis enim vel posuere consectetur. Quisque neque dui, placerat venenatis ultricies quis, imperdiet ac justo. Integer eget tristique massa, eu aliquam ligula. Aenean sodales varius lorem quis consectetur. Sed lobortis luctus risus, id elementum lacus interdum ac. In et urna id ante iaculis finibus. Mauris vel eros imperdiet, suscipit velit sed, eleifend ipsum.\n'}
-        subTitle={'The Subtitle'}
-        secondDescription={'Second description goes here'}/>
+        mainDescription={'Way To Be! is a mobile app created for the Maryland Business Roundtable for Education. This fun app helps children in Maryland public schools '
+        + 'navigate their way to college, learn about potential career paths, and have fun in the process. This gamified app allows users to earn points in the game by completing quizzes '
+        + 'and defeating bosses.'}
+        subTitle={'Technologies'}
+        secondDescription={'The Way To Be! app was written in Node.js using React Native. The app uses MobX for state management and Apollo/GraphQL for data fetching and mutation. '
+        + 'The back-end of the application is supported by a Drupal 8 site that exposes information via GraphQL.'}/>
 
         <ProjectBlock
           alternate
           link={'https://www.idagent.com/dark-web/'}
           skills={['drupal', 'laravel', 'php', 'sass', 'jquery', 'aws', 'node', 'git']}
           image={'../assets/project-darkweb.png'}
-          imageAlt={'Darkweb ID'}
-          title={'Darkweb ID'}
-          mainDescription={'\n' +
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at velit erat. Aenean eu accumsan justo. Morbi varius est at diam auctor, sed sagittis ex gravida. Nulla at nibh rhoncus, lobortis lectus non, pretium sem. Curabitur nec magna semper, scelerisque nisi et, malesuada nulla. Nullam ac quam lectus. Morbi sit amet lectus lectus. Vestibulum congue consequat nisl, in consectetur felis venenatis eget. Nunc non magna velit. Ut vitae erat molestie, gravida ex sit amet, tincidunt orci. Fusce lacinia ac felis ac maximus. Donec gravida quis augue eu sagittis.\n' +
-          '\n' +
-          'Vestibulum molestie mauris ultrices dui lobortis tincidunt. Nam dignissim augue a libero tempor bibendum. Pellentesque venenatis enim vel posuere consectetur. Quisque neque dui, placerat venenatis ultricies quis, imperdiet ac justo. Integer eget tristique massa, eu aliquam ligula. Aenean sodales varius lorem quis consectetur. Sed lobortis luctus risus, id elementum lacus interdum ac. In et urna id ante iaculis finibus. Mauris vel eros imperdiet, suscipit velit sed, eleifend ipsum.\n'}
-          subTitle={'The Subtitle'}
-          secondDescription={'Second description goes here'}/>
+          imageAlt={'Dark Web ID'}
+          title={'ID Agent: Dark Web ID'}
+          mainDescription={'ID Agent\'s Dark Web ID is a dark web monitoring platform that allows organizations to monitor compromised or stolen employee and customer data. '
+          + 'The platform also allows its partners to simulate controlled Phishing attacks to strengthen employee awareness and mitigate real-life threats.'}
+          subTitle={'Technologies'}
+          secondDescription={'Dark Web ID is Drupal 7 site hosted on AWS that pulls compromised data information from various APIs. '
+          + 'Work for the site included creating an updated back-end system for the site in Laravel to accommodate increasing demand; '
+          + 'creating complex tabular interfaces using Sass/CSS, jQuery, and JavaScript; and developing RESTful API services in Node.js and AWS Lambdas.'}/>
 
       <ProjectBlock
         link={'https://www.prometric.com/'}
@@ -36,12 +36,12 @@ const ProjectsPage = () => {
         image={'../assets/project-prometric.png'}
         imageAlt={'Prometric'}
         title={'Prometric'}
-        mainDescription={'\n' +
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at velit erat. Aenean eu accumsan justo. Morbi varius est at diam auctor, sed sagittis ex gravida. Nulla at nibh rhoncus, lobortis lectus non, pretium sem. Curabitur nec magna semper, scelerisque nisi et, malesuada nulla. Nullam ac quam lectus. Morbi sit amet lectus lectus. Vestibulum congue consequat nisl, in consectetur felis venenatis eget. Nunc non magna velit. Ut vitae erat molestie, gravida ex sit amet, tincidunt orci. Fusce lacinia ac felis ac maximus. Donec gravida quis augue eu sagittis.\n' +
-        '\n' +
-        'Vestibulum molestie mauris ultrices dui lobortis tincidunt. Nam dignissim augue a libero tempor bibendum. Pellentesque venenatis enim vel posuere consectetur. Quisque neque dui, placerat venenatis ultricies quis, imperdiet ac justo. Integer eget tristique massa, eu aliquam ligula. Aenean sodales varius lorem quis consectetur. Sed lobortis luctus risus, id elementum lacus interdum ac. In et urna id ante iaculis finibus. Mauris vel eros imperdiet, suscipit velit sed, eleifend ipsum.\n'}
-        subTitle={'The Subtitle'}
-        secondDescription={'Second description goes here'}/>
+        mainDescription={'Prometric is a leading provider of technology-enabled testing and assessment solutions to many of the world’s most recognized '
+        + 'licensing and certification organizations, academic institutions, and government agencies. They support more than 7 million test takers annually '
+        + 'at testing locations in more than 160 countries around the world.'}
+        subTitle={'Technologies'}
+        secondDescription={'The Prometric project was a complete site migration and redesign using Drupal 8. UI designs for the new site were brought to life '
+        + 'using PHP, Sass/CSS, JavaScript, jQuery, and Twig templates.'}/>
 
     </div>
   );
