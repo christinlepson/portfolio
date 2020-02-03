@@ -4,7 +4,7 @@ import {Route, Switch} from "react-router-dom";
 import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
 import {hot} from "react-hot-loader";
-import {ProjectsPage, ResumePage, AboutPage, Navigation} from '../components';
+import {ProjectsPage, ResumePage, ContactPage, Navigation} from '../components';
 import {useScript} from '../hooks';
 
 // This is a class-based component because the current
@@ -21,7 +21,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={ProjectsPage}/>
           <Route path="/resume" component={ResumePage}/>
-          <Route path="/about" component={AboutPage}/>
+          <Route path="/contact" component={ContactPage}/>
           <Route component={NotFoundPage}/>
         </Switch>
       </div>

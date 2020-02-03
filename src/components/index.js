@@ -5,8 +5,8 @@ import SkillList from './SkillList';
 import SkillItem from './SkillItem';
 import ResumePage from './ResumePage';
 import ProjectsPage from './ProjectsPage';
-import AboutPage from './AboutPage';
 import ResumeBlock from './ResumeBlock';
+import ContactPage from './ContactPage';
 
 export {
   Navigation,
@@ -16,6 +16,6 @@ export {
   SkillItem,
   ResumePage,
   ProjectsPage,
-  AboutPage,
   ResumeBlock,
+  ContactPage
 };

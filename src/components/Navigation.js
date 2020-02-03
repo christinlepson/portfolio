@@ -42,8 +42,8 @@ const Navigation = (props) => {
               <li className={getNavLinkClass('/resume')}>
                 <NavLink onClick={clickToggler} className={'nav-item'} to="/resume">Résumé</NavLink>
               </li>
-              <li className={getNavLinkClass('/about')}>
-                <NavLink onClick={clickToggler} className={'nav-item'} to="/about">Contact Me</NavLink>
+              <li className={getNavLinkClass('/contact')}>
+                <NavLink onClick={clickToggler} className={'nav-item'} to="/contact">Contact Me</NavLink>
               </li>
             </ul>
 
