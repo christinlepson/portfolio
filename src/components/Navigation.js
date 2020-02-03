@@ -39,8 +39,8 @@ const Navigation = (props) => {
               <li className={getNavLinkClass('/')}>
                 <NavLink onClick={clickToggler} className={'nav-item'} exact to="/">Projects</NavLink>
               </li>
-              <li className={getNavLinkClass('/fuel-savings')}>
-                <NavLink onClick={clickToggler} className={'nav-item'} to="/fuel-savings">Résumé</NavLink>
+              <li className={getNavLinkClass('/resume')}>
+                <NavLink onClick={clickToggler} className={'nav-item'} to="/resume">Résumé</NavLink>
               </li>
               <li className={getNavLinkClass('/about')}>
                 <NavLink onClick={clickToggler} className={'nav-item'} to="/about">Contact Me</NavLink>

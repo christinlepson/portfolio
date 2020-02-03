@@ -1,9 +1,9 @@
 import React from 'react';
 import {ProjectBlock} from '.';
 
-const HomePage = () => {
+const ProjectsPage = () => {
   return (
-    <div>
+    <div className={'projects'}>
       <ProjectBlock
         skills={['reactNative', 'node', 'firebase', 'git']}
         image={'../assets/project-mbrt.png'}
@@ -47,4 +47,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default ProjectsPage;

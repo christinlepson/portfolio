@@ -1,13 +1,10 @@
 /* eslint-disable import/no-named-as-default */
 import React from "react";
 import {Route, Switch} from "react-router-dom";
-import AboutPage from "./AboutPage";
-import FuelSavingsPage from "./containers/FuelSavingsPage";
-import HomePage from "./HomePage";
 import NotFoundPage from "./NotFoundPage";
 import PropTypes from "prop-types";
 import {hot} from "react-hot-loader";
-import {Navigation} from '../components';
+import {ProjectsPage, ResumePage, AboutPage, Navigation} from '../components';
 import {useScript} from '../hooks';
 
 // This is a class-based component because the current
@@ -22,8 +19,8 @@ const App = () => {
       <Navigation/>
       <div className={'content-container'}>
         <Switch>
-          <Route exact path="/" component={HomePage}/>
-          <Route path="/fuel-savings" component={FuelSavingsPage}/>
+          <Route exact path="/" component={ProjectsPage}/>
+          <Route path="/resume" component={ResumePage}/>
           <Route path="/about" component={AboutPage}/>
           <Route component={NotFoundPage}/>
         </Switch>
