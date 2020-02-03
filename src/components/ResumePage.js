@@ -6,6 +6,16 @@ function ResumePage() {
   return (
     <div className={'resume'}>
       <Container className={'resume__content'}>
+        <Row className={'resume__download'}>
+          <Col>
+            <div className={'resume__download-container'}>
+              <a download={'christin-lepson-resume.pdf'} target={'_blank'} className={'resume__download-button'} href={'../public/christin-lepson-resume.pdf'}>
+                View as PDF
+                <i className="fas fa-file-download"></i>
+              </a>
+            </div>
+          </Col>
+        </Row>
         <Row className={'resume__header'}>
           <Col lg={8}>
             <h1 className={'resume__name'}>Christin Lepson</h1>

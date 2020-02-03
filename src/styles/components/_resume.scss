@@ -32,6 +32,30 @@
     font-size: 18px;
   }
 
+  &__download {
+    color: $dark-red;
+    font-size: 40px;
+    border-bottom: none !important;
+
+    &-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &-button {
+      background-color: $white-smoke;
+      padding: 10px 15px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    i {
+      margin-left: 5px;
+    }
+
+  }
+
   &__header {
     p {
       margin: 0;
