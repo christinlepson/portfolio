@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Container, Row, Col} from 'react-bootstrap';
 
-function ResumeBlock({title, subtitle, startDate, info, bullets, noListDecoration}) {
+function ResumeBlock({title, subtitle, info, bullets, noListDecoration}) {
   return (
     <Container>
 
@@ -52,19 +52,12 @@ function ResumeBlock({title, subtitle, startDate, info, bullets, noListDecoratio
   );
 }
 
-ResumeBlock.proptypes = {
+ResumeBlock.propTypes = {
   title: PropTypes.string,
-  subTitle: PropTypes.string,
+  subtitle: PropTypes.string,
   info: PropTypes.object,
   bullets: PropTypes.array.isRequired,
   noListDecoration: PropTypes.bool,
-};
-
-const styles = {
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-  },
 };
 
 export default ResumeBlock;

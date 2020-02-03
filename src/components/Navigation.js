@@ -55,7 +55,7 @@ const Navigation = (props) => {
   );
 };
 
-Navigation.proptypes = {
+Navigation.propTypes = {
   location: PropTypes.object.isRequired,
 };
 
