@@ -1,7 +1,7 @@
 import React, {useRef} from 'react';
-import {NavLink} from 'react-router-dom';
+import PropTypes from 'prop-types';
+import {NavLink, withRouter} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
-import {withRouter} from 'react-router-dom';
 import {SocialMediaList} from '.';
 
 const Navigation = (props) => {
@@ -53,6 +53,10 @@ const Navigation = (props) => {
       </div>
     </Navbar>
   );
+};
+
+Navigation.proptypes = {
+  location: PropTypes.object.isRequired,
 };
 
 const styles = {
